@@ -21,8 +21,9 @@ body {
   grid-column-start: 1;
   grid-column-end: 5;
   border: 1px solid black;
-  display: flex;
-  justify-content: center;
+  display: grid;
+  align-items: center;
+  justify-content: end;
   color: whitesmoke;
   font-size: 2rem;
   margin: none;
@@ -45,7 +46,6 @@ button {
 }
 
 .operators {
- /* background-color: #817c7c; */
   background-color: #00c0f5;
 }
 
