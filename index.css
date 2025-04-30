@@ -9,10 +9,11 @@ body {
   width: 400px;
   border: 2px solid black;
   background-color: silver;
+  border-radius: 10px;
 }
 
 .calc-button {
-  border: 2px solid D9D9D9;
+  border: 2px solid #D9D9D9;
   margin: 5px;
 }
 
@@ -20,9 +21,38 @@ body {
   grid-column-start: 1;
   grid-column-end: 5;
   border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  color: whitesmoke;
+  font-size: 2rem;
+  margin: none;
+  padding: 20px;
+  background-color: black;
 }
 
 .zero {
   grid-column-start: 1;
   grid-column-end: 3;
+}
+
+button {
+  font-size: 2.5rem;
+  font-family: Georgia, Times, 'Times New Roman', serif;
+  background-color: #ED9C9C;
+  border-radius: 10px;
+  box-shadow: inset 0px 0px 5px #000000;
+  transition: all 0.3s ease-in-out;
+}
+
+.operators {
+ /* background-color: #817c7c; */
+  background-color: #00c0f5;
+}
+
+#clear {
+  background-color: #f48626;
+}
+
+#equals {
+  background-color: #efc931;
 }
