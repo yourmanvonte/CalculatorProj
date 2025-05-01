@@ -9,25 +9,25 @@
 <body>
   <div class="container">
     <div class="output">Output</div>
-    <button class="calc-button" type="button" id="clear" onclick="" value="C">C</button>
-    <button class="calc-button operators" type="button" onclick="" value="+/-">+/-</button>
-    <button class="calc-button operators" type="button" onclick="" value="%">%</button>
-    <button class="calc-button operators" type="button" onclick="" value="/">/</button>
-    <button class="calc-button" type="button" onclick="" value="7">7</button>
-    <button class="calc-button" type="button" onclick="" value="8">8</button>
-    <button class="calc-button" type="button" onclick="" value="9">9</button>
-    <button class="calc-button operators" type="button" onclick="" value="*">*</button>
-    <button class="calc-button" type="button" onclick="" value="4">4</button>
-    <button class="calc-button" type="button" onclick="" value="5">5</button>
-    <button class="calc-button" type="button" onclick="" value="6">6</button>
-    <button class="calc-button operators" type="button" onclick="" value="-">-</button>
-    <button class="calc-button" type="button" onclick="" value="1">1</button>
-    <button class="calc-button" type="button" onclick="" value="2">2</button>
-    <button class="calc-button" type="button" onclick="" value="3">3</button>
-    <button class="calc-button operators" type="button" onclick="" value="+">+</button>
-    <button class="calc-button zero" type="button" onclick="" value="0">0</button>
-    <button class="calc-button" type="button" onclick="" value=".">.</button>
-    <button class="calc-button" id="equals" type="button" onclick="" value="=">=</button>
+    <button class="calc-button" type="button" id="clear" onclick="clearDisplay()" value="C">C</button>
+    <button class="calc-button operators" type="button" onclick="displayOutput('+/-')" value="+/-">+/-</button>
+    <button class="calc-button operators" type="button" onclick="displayOutput('%')" value="%">%</button>
+    <button class="calc-button operators" type="button" onclick="displayOutput('/')" value="/">/</button>
+    <button class="calc-button" type="button" onclick="displayOutput('7')" value="7">7</button>
+    <button class="calc-button" type="button" onclick="displayOutput('8')" value="8">8</button>
+    <button class="calc-button" type="button" onclick="displayOutput('9')" value="9">9</button>
+    <button class="calc-button operators" type="button" onclick="displayOutput('*')" value="*">*</button>
+    <button class="calc-button" type="button" onclick="displayOutput('4')" value="4">4</button>
+    <button class="calc-button" type="button" onclick="displayOutput('5')" value="5">5</button>
+    <button class="calc-button" type="button" onclick="displayOutput('6')" value="6">6</button>
+    <button class="calc-button operators" type="button" onclick="displayOutput('-')" value="-">-</button>
+    <button class="calc-button" type="button" onclick="displayOutput('1')" value="1">1</button>
+    <button class="calc-button" type="button" onclick="displayOutput('2')" value="2">2</button>
+    <button class="calc-button" type="button" onclick="displayOutput('3')" value="3">3</button>
+    <button class="calc-button operators" type="button" onclick="displayOutput('+')" value="+">+</button>
+    <button class="calc-button zero" type="button" onclick="displayOutput('0')" value="0">0</button>
+    <button class="calc-button" type="button" onclick="displayOutput('.')" value=".">.</button>
+    <button class="calc-button" id="equals" type="button" onclick="calculate()" value="=">=</button>
   </div>
 
   <script src="index.js"></script>
